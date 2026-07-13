@@ -1,0 +1,136 @@
+/* ---- Javier Quintana González — academic site ---- */
+:root{
+  --ink:#1a1a1a;
+  --muted:#555;
+  --rule:#d8d8d8;
+  --link:#3a4a63;
+  --link-hover:#8a1c1c;
+  --bg:#fdfdfc;
+  --maxw:760px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-size:18px;
+  line-height:1.55;
+}
+a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent;}
+a:hover{color:var(--link-hover);border-bottom-color:currentColor;}
+
+/* ---- top navigation ---- */
+header.site{
+  border-bottom:1px solid var(--rule);
+  background:var(--bg);
+}
+.nav-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:20px 24px 14px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:6px 18px;
+}
+.nav-name{
+  font-variant:small-caps;
+  letter-spacing:.5px;
+  font-size:20px;
+  font-weight:700;
+  color:var(--ink);
+  border:0;
+}
+.nav-name:hover{color:var(--ink);}
+nav.menu{display:flex;gap:20px;flex-wrap:wrap;}
+nav.menu a{
+  font-variant:small-caps;
+  font-size:16px;
+  letter-spacing:.4px;
+  color:var(--muted);
+  border:0;
+  padding-bottom:2px;
+}
+nav.menu a:hover,nav.menu a.active{color:var(--ink);border-bottom:1px solid var(--ink);}
+
+/* ---- main ---- */
+main{max-width:var(--maxw);margin:0 auto;padding:34px 24px 70px;}
+
+h1.title{
+  font-size:34px;
+  font-weight:700;
+  margin:.1em 0 .1em;
+  letter-spacing:.3px;
+}
+.subtitle{color:var(--muted);font-style:italic;font-size:20px;margin:0 0 1.4em;}
+
+/* section headings, echoing the classic CV */
+h2.section{
+  font-variant:small-caps;
+  letter-spacing:.6px;
+  font-size:21px;
+  font-weight:700;
+  margin:1.9em 0 .1em;
+  padding-bottom:.12em;
+  border-bottom:.5px solid var(--ink);
+}
+
+/* ---- home layout ---- */
+.home-grid{display:flex;gap:34px;flex-wrap:wrap;align-items:flex-start;margin-top:8px;}
+.home-grid .photo{flex:0 0 240px;max-width:240px;}
+.home-grid .photo img{width:100%;height:auto;border:1px solid var(--rule);}
+.photo .placeholder{
+  width:100%;aspect-ratio:4/5;border:1px dashed #bbb;
+  display:flex;align-items:center;justify-content:center;
+  color:#999;font-size:14px;text-align:center;padding:10px;font-family:Arial,sans-serif;
+}
+.home-grid .info{flex:1 1 300px;}
+.info h3{font-size:17px;margin:0 0 .3em;font-variant:small-caps;letter-spacing:.4px;}
+.info ul{margin:.2em 0 1.2em;padding-left:1.2em;}
+.info p{margin:.2em 0;}
+
+/* ---- publication lists ---- */
+ol.pubs{list-style:none;counter-reset:pub;margin:.6em 0 0;padding:0;}
+ol.pubs li{
+  position:relative;
+  margin:0 0 1.15em;
+  padding-left:0;
+}
+.pub-title{font-weight:700;}
+.pub-meta{color:var(--muted);}
+.pub-venue{font-style:italic;}
+.pub-links{font-size:15px;margin-top:.15em;}
+.pub-links a{font-variant:small-caps;letter-spacing:.3px;margin-right:.7em;color:var(--link);}
+.pub-abstract{
+  font-size:16px;color:#333;margin:.35em 0 0;
+  padding-left:14px;border-left:2px solid var(--rule);
+}
+.tag{font-size:13px;font-variant:small-caps;letter-spacing:.5px;color:#777;}
+
+/* refereeing / plain prose */
+.prose p{margin:.4em 0;}
+.refereeing{font-style:italic;}
+.refereeing .noital{font-style:normal;}
+
+/* ---- CV embed ---- */
+.cv-actions{margin:.4em 0 1.2em;}
+.btn{
+  display:inline-block;border:1px solid var(--ink);padding:7px 16px;
+  font-variant:small-caps;letter-spacing:.5px;font-size:16px;color:var(--ink);
+}
+.btn:hover{background:var(--ink);color:#fff;border-bottom-color:var(--ink);}
+.pdf-frame{width:100%;height:900px;border:1px solid var(--rule);margin-top:8px;}
+
+footer.site{
+  max-width:var(--maxw);margin:0 auto;padding:22px 24px 40px;
+  border-top:1px solid var(--rule);color:#999;font-size:14px;font-family:Arial,sans-serif;
+}
+
+@media (max-width:560px){
+  body{font-size:17px;}
+  .pdf-frame{height:560px;}
+  .home-grid .photo{flex-basis:100%;max-width:280px;margin:0 auto;}
+}
