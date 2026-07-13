@@ -99,7 +99,9 @@ ol.pubs li{
   margin:0 0 1.15em;
   padding-left:0;
 }
-.pub-title{font-weight:700;}
+.pub-title{font-weight:700;color:var(--ink);}
+a.pub-title{border-bottom:1px solid transparent;}
+a.pub-title:hover{color:var(--link-hover);border-bottom-color:currentColor;}
 .pub-meta{color:var(--muted);}
 .pub-venue{font-style:italic;}
 .pub-links{font-size:15px;margin-top:.15em;}
