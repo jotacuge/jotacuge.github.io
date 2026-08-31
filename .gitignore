@@ -1,0 +1,27 @@
+# --- Legado: CV de 2019 y sus recursos (se conserva en Dropbox, no se publica) ---
+cv_13.tex
+cv_13.pdf
+cv_13.log
+structure.tex
+fonts/
+
+# --- Copia comprimida del propio sitio ---
+javier-website-full_1.zip
+
+# --- Variantes de trabajo del CV: se versionan los .tex, no estos PDF ---
+cv_javier.pdf
+cv_javier_classic.pdf
+
+# --- Auxiliares de LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# --- Sistema ---
+Thumbs.db
+.DS_Store
+desktop.ini

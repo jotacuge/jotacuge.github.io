@@ -1,0 +1,188 @@
+% --- LaTeX CV - Javier Quintana González ---
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+% --- Page layout settings ---
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+% --- Page formatting ---
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+% Remove page numbering
+\pagenumbering{gobble}
+% --- Document starts here ---
+\begin{document}
+% Name and date of last update to this document
+\noindent{\Huge{Javier Quintana González}}
+% \hfill{\it\footnotesize Updated \today}}
+% --- Contact information and other items ---
+\vspace{0.5cm}
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Address}: Calle Alcalá 48, 28014, Madrid, Spain       \\
+\textbf{Email}: javier.quintana@bde.es  \\
+\textbf{Web}: \href{https://www.javierquintana.net}{www.javierquintana.net}
+\end{tabular}
+\end{center}
+% --- Start the two-column table storing the main content ---
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+\color{OliveGreen}{Employment}
+& \textbf{Bank of Spain} \hfill 2020 - \\
+& Senior Economist, Department of Spanish Economy Analysis \\
+& \\
+% --- Section: Education ---
+\color{OliveGreen}{Education}
+& \textbf{Bocconi University}, \textit{PhD} \hfill Milan, Italy, 2020 \\
+& \textbf{CEMFI}, \textit{MSc in Economics and Finance} \hfill Madrid, Spain, 2014 \\
+& \textbf{Universidad Carlos III}, \textit{Licenciatura} \hfill Madrid, Spain, 2012 \\
+& \\
+% --- Section: Research interests ---
+\nohyphens{\color{OliveGreen}{Research interests}}
+& Production Networks, International Trade, Productivity, Economic Geography \\
+& \\
+% --- Section: Publications ---
+\color{OliveGreen}{Publications}
+& \textbf{Tilting at Giants? Spain's Role in the Shifting Global Supply Chain} \textit{\mbox{SERIEs}, 2026} \\
+& with L. Alfaro \\
+& \\
+& \textbf{Revisiting Productivity Dynamics in Europe: A New Measure of Utilization-Adjusted TFP Growth} \textit{Journal of the European Economic Association}, 23(4), 1598--1633, 2025 \\
+& with D. Comin, T. Schmitz and A. Trigari \\
+& \\
+& \textbf{Urban Accounting and Welfare in Spain} \textit{Regional Science and Urban Economics}, 115(C), 104160, 2025 \\
+& with D. Cuberes and E. Moral-Benito \\
+& \\
+& \textbf{On the macroeconomic impact of NGEU funds and its propagation through the production network} \textit{Economic Modelling}, 132, 106669, 2024 \\
+& with A. Fernández and E. Moral-Benito \\
+& \\
+& \textbf{The heterogeneous effects of a higher volume of regulation: evidence from more than 200k Spanish norms} \textit{Journal of Regulatory Economics}, 65(1), 137--153, 2024 \\
+& with J. Mora-Sanguinetti, I. Soler and R. Spruk \\
+& \\
+% --- Section: Working Papers ---
+\color{OliveGreen}{Working Papers}
+& \textbf{Tariffs, Production Networks, and Spillovers: the Case of a US-China Trade War} \textit{ECB Working Paper 3254}, 2026 \\
+& with P. Aguilar, M. Darracq Pariès, A. Dieppe, R. Domínguez-Díaz, A. Eugenelo and J.E. Gallegos \\
+& \\
+& \textbf{The Transmission of Foreign Shocks in a Networked Economy} \textit{Banco de España Working Paper 2607}, 2026 \\
+& with P. Aguilar, R. Domínguez and J.E. Gallegos \\
+& \\
+& \textbf{Shock Transmission in a Monetary Union: Aggregate Impacts and Cross-Sectional Incidence across Euro Area Countries} \textit{ECB Working Paper} \\
+& with C. Osbat, E. Rubbo, G. Buss, A. Cantelmo, M. Dobrew, R. Domínguez-Díaz, M. Elfsbacka-Schmöller, J.E. Gallegos, N. Lisack, M. Pisani and D. Verdini \\
+& \\
+& \textbf{Carbon Pricing, Border Adjustment and Renewable Energy Investment: a Network Approach} \textit{Banco de España Working Paper}, 2025 \\
+& with M. Delgado and D. Santabárbara \\
+& \\
+& \textbf{Governance Dynamics and Derisking Strategies in Europe: A Comparative Study of Germany, Italy, and Spain} \textit{R\&R International Journal of Operations and Production Management} \\
+& with I. Balteanu, A. Boffelli, M. Bottone, A. Kutten, M. Mancini and D. Pegoraro \\
+& \\
+& \textbf{Regional Divergence, Manufacturing Decline and the Rise of Skilled Services} \textit{R\&R Journal of Economic Geography} \\
+& \\
+% --- Section: Work in Progress ---
+\color{OliveGreen}{Work in Progress}
+& \textbf{The Dynamics of Trade Fragmentation: a Network Approach} \\
+& \\
+& \textbf{Tariffs as Taxes on Capital} \\
+& with R. Domínguez-Díaz, M. Domínguez-Jiménez and J.E. Gallegos \\
+& \\
+% --- Section: Policy Works ---
+\color{OliveGreen}{Policy Works}
+& \textbf{The propagation of shocks across the production network and implications for monetary policy} \textit{ECB Occasional Paper 392}, 2026 \\
+& with S. Gebauer, A. Nakov, G. Nuño, C. Osbat, A. Palazzolo, G. Paz-Pardo, A. Paulus and M.T. Valderrama \\
+& \\
+& \textbf{Estimating the growth potential of the Spanish economy: a methodological review} \textit{Banco de España Occasional Paper 2604}, 2026 \\
+& with R. Domínguez, M. García and R. Veiga \\
+& \\
+& \textbf{CATALIST: a new, bigger, better model for evaluating climate change transition risks at Banco de España} \textit{Banco de España Working Paper 2504}, 2025 \\
+& with P. Aguilar, S. Hurtado, C. Menéndez and R. Veiga \\
+& \\
+& \textbf{Exposure of Spanish firms to imports of critical inputs from China: a survey-based analysis} \textit{Economic Bulletin 2024/Q4, Article 02} \\
+& with I. Balteanu and A. Fernández \\
+& \\
+& \textbf{Navigating a Fragmenting Global Trading System: Insights for Central Banks} \textit{ECB Occasional Paper 365}, 2024 \\
+& \\
+& \textbf{The impact of renewable energies on wholesale electricity prices} \textit{Economic Bulletin 2024/Q3, Article 09} \\
+& \\
+& \textbf{The asymmetric response of producer prices to rising oil and gas prices} \textit{Economic Bulletin 2022/Q4, Box 3} \\
+& with J.E. Gallegos \\
+& \\
+& \textbf{Potential Growth in the Spanish Economy after the Pandemic} \textit{Banco de España Occasional Paper 2208}, 2022 \\
+& with P. Cuadrado, J.M. Montero, M. Izquierdo and E. Moral-Benito \\
+& \\
+& \textbf{Economic Consequences of a Hypothetical Suspension of Russia-EU Trade} \textit{Economic Bulletin 2022/Q2} \\
+& \\
+& \textbf{Local Price Index for Spanish Urban Areas} \textit{Economic Bulletin 2021/Q3} \\
+& with V. Forte-Campos and E. Moral-Benito \\
+& \\
+% --- Section: Refereeing ---
+\nohyphens{\color{OliveGreen}{Refereeing}}
+& \textit{Econometrica}, \textit{Journal of International Economics}, \textit{Journal of Macroeconomics}, \textit{Energy Economics}, \textit{Economic Modelling}, \textit{SERIEs}, \textit{The Journal of International Trade \& Economic Development}, ECB Working Paper Series, OeNB Working Paper Series \\
+% --- Uncomment the next few lines if you want to include some courses ---
+%& \textbf{Selected coursework}
+%\begin{itemize}[noitemsep,leftmargin=*]
+%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
+%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
+%\end{itemize} \\
+% % --- Section: Presentations ---
+% \nohyphens{\color{OliveGreen}{Presentations}}
+%  & \textbf{2023} Spanish Macro Network (Sevilla), ECB Working Group in Economic Modelling workshop, Society Economic Dynamics (Cartagena, Colombia), European Central Bank, ECB-Champ Research Netowrk (Brussels), Bank of England, University of Barcelona, Bank of Italy, European Trade Study Group (Surrey, UK), Urban Economics Association European Meeting (Milan, Italy)\\
+%  \\
+%  & \textbf{2022} Simposio Economía Española (Valencia), 12th ifo Conference on Macroeconomics and Survey Data (virtual), European Meeting Urban Economics Association (London, UK), European Society of Population Economics (Calabria, Italy) \\
+%  \\
+% & \textbf{2021} Society of Economic Dynamics Meeting (virtual), EEA-ESEM (virtual), European Meeting Urban Economics Association (virtual), 25th Spring Meeting of Young Economists (virtual) \\
+% \\
+% &  \textbf{2020} 15th Meeting of the Urban Economics Association (virtual), 32nd EALE Conference (virtual) \\
+% \\
+% & \textbf{2019} UCLA (Los Angeles, USA), 8th European Meeting Urban Economics Association (Amsterdam, Netherlands), EEA-ESEM Annual Meeting (Manchester, UK), Society for Economic Measurement Conference (Frankfurt, Germany),21st ETSG Conference (Bern, Switzerland), FREIT Sardinian Empirical Trade Conference (Cagliary, Italy) Jamboree Conference (Cambridge University, UK), 31st EALE Conference (Uppsala, Sweden), 14th Meeting of the Urban Economics Association (Philadelphia, USA) \\
+% \\
+% & \textbf{2018} 9th Economics of Global Interactions Conference (Aldo Moro University, Italy) , 17th Annual GEP Postgraduate Conference (Nottingham, UK), SERC - LSE Annual Conference 2018 (London, UK)
+% \\
+% & \\
+% \nohyphens{\color{OliveGreen}{Referee Activity}}
+% & \textit{Economic Journal, Journal of Macroeconomics, Series} \\
+% & \\
+% % --- Section: Teaching experience ---
+% {\color{OliveGreen}{Teaching experience}}
+% & \textbf{Lecturer, Bocconi University} \hfill 2018-2020 \\
+% & International Macroeconomics (Undergraduate) \\
+% & \\
+% & \textbf{Teaching Assistant, Bocconi University} \hfill 2015-2020 \\
+% & International Economics (Graduate and Undergraduate) \\
+% & Economics of Institutions and Culture  (Undergraduate) \\
+% & Introduction to Microeconomics (Undergraduate) \\
+% & Introduction to Macroeconomics (Undergraduate) \\
+% & \\
+% & \textbf{Teaching Assistant, Polytechnic University Milan } \hfill 2017-2018 \\
+% & International Economics (Graduate) \\
+% & \\
+% % --- Section: Awards, scholarships, etc. ---
+% % --- Note: section title is spread over two lines ---
+% {\color{OliveGreen}{Honors and}}
+% & \textbf{Wim Meeusen Prize} awarded to the best paper by a young scholar \\
+% {\color{OliveGreen}{scholarships}} & \textit{Economics of Global Interactions Conference} \hfill 2018\\
+%  & \\
+% & Fondazione Invernizzi Research Scholarship \hfill 2019-2020 \\
+% & Bocconi Graduate Research Scholarship \hfill 2014-2019 \\
+% & LaCaixa Graduate Scholarship \hfill 2012-2014 \\
+% & \\
+% % --- Section: Various skills (programming, software, languages, etc.) ---
+% {\color{OliveGreen}{Skills}}
+% & \textbf{Programming}\\
+% & Stata, Matlab, R \\
+% & \\
+% & \textbf{Languages} \\
+% & Spanish (native), English (fluent), Italian (advanced) \\
+% & \\
+%% Participar WGF, WGEM, TEN
+% --- End of CV! ---
+\end{longtable}
+\end{document}

@@ -1,0 +1,113 @@
+% --- Classic academic CV - Javier Quintana González ---
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[letterpaper, left=1.1in, right=1.1in, top=1in, bottom=1in]{geometry}
+% Classic Times-style font with matching math
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\onehalfspacing
+
+% --- Section header: small caps with a rule underneath ---
+\newcommand{\cvsection}[1]{%
+  \vspace{1.1em}\par
+  {\large\scshape #1}\par
+  \vspace{0.15em}
+  \hrule height 0.5pt
+  \vspace{0.7em}
+}
+
+% --- Dated entry (employment / education): text left, date flush right ---
+\newcommand{\dated}[2]{%
+  \noindent #1 \hfill #2 \par \vspace{0.35em}
+}
+
+% --- Publication / paper entry with hanging indent ---
+\newenvironment{cvlist}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{1.4em}%
+    \setlength{\itemindent}{-1.4em}%
+    \setlength{\itemsep}{0.55em}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0pt}}%
+}{\end{list}}
+
+\begin{document}
+
+% --- Heading ---
+\begin{center}
+  {\LARGE\scshape Javier Quintana González}\\[0.7em]
+  {\small
+  Calle Alcalá 48, 28014 Madrid, Spain\\[0.2em]
+  javier.quintana@bde.es \quad$\cdot$\quad \href{https://www.javierquintana.net}{www.javierquintana.net}
+  }
+\end{center}
+\vspace{0.4em}
+
+% --- Employment ---
+\cvsection{Employment}
+\dated{\textbf{Banco de España} --- Senior Economist, Department of Spanish Economy Analysis}{2020--}
+
+% --- Education ---
+\cvsection{Education}
+\dated{\textbf{Bocconi University}, Ph.D. in Economics --- Milan, Italy}{2020}
+\dated{\textbf{CEMFI}, M.Sc. in Economics and Finance --- Madrid, Spain}{2014}
+\dated{\textbf{Universidad Carlos III}, Licenciatura in Economics --- Madrid, Spain}{2012}
+
+% --- Research Interests ---
+\cvsection{Research Interests}
+Production Networks, International Trade, Productivity, Economic Geography.
+
+% --- Publications ---
+\cvsection{Publications}
+\begin{cvlist}
+\item ``Tilting at Giants? Spain's Role in the Shifting Global Supply Chain'' (with L. Alfaro), \textit{SERIEs}, 2026.
+\item ``Revisiting Productivity Dynamics in Europe: A New Measure of Utilization-Adjusted TFP Growth'' (with D. Comin, T. Schmitz and A. Trigari), \textit{Journal of the European Economic Association}, 23(4), 1598--1633, 2025.
+\item ``Urban Accounting and Welfare in Spain'' (with D. Cuberes and E. Moral-Benito), \textit{Regional Science and Urban Economics}, 115(C), 104160, 2025.
+\item ``On the Macroeconomic Impact of NGEU Funds and Its Propagation through the Production Network'' (with A. Fernández and E. Moral-Benito), \textit{Economic Modelling}, 132, 106669, 2024.
+\item ``The Heterogeneous Effects of a Higher Volume of Regulation: Evidence from More than 200k Spanish Norms'' (with J. Mora-Sanguinetti, I. Soler and R. Spruk), \textit{Journal of Regulatory Economics}, 65(1), 137--153, 2024.
+\end{cvlist}
+
+% --- Working Papers ---
+\cvsection{Working Papers}
+\begin{cvlist}
+\item ``Tariffs, Production Networks, and Spillovers: The Case of a US-China Trade War'' (with P. Aguilar, M. Darracq Pariès, A. Dieppe, R. Domínguez-Díaz, A. Eugenelo and J.E. Gallegos), ECB Working Paper 3254, 2026.
+\item ``The Transmission of Foreign Shocks in a Networked Economy'' (with P. Aguilar, R. Domínguez and J.E. Gallegos), Banco de España Working Paper 2607, 2026.
+\item ``Shock Transmission in a Monetary Union: Aggregate Impacts and Cross-Sectional Incidence across Euro Area Countries'' (with C. Osbat, E. Rubbo, G. Buss, A. Cantelmo, M. Dobrew, R. Domínguez-Díaz, M. Elfsbacka-Schmöller, J.E. Gallegos, N. Lisack, M. Pisani and D. Verdini), ECB Working Paper.
+\item ``Carbon Pricing, Border Adjustment and Renewable Energy Investment: A Network Approach'' (with M. Delgado and D. Santabárbara), Banco de España Working Paper 2506, 2025.
+\item ``Governance Dynamics and Derisking Strategies in Europe: A Comparative Study of Germany, Italy, and Spain'' (with I. Balteanu, A. Boffelli, M. Bottone, A. Kutten, M. Mancini and D. Pegoraro), R\&R \textit{International Journal of Operations and Production Management}.
+\item ``Regional Divergence, Manufacturing Decline and the Rise of Skilled Services,'' R\&R \textit{Journal of Economic Geography}.
+\end{cvlist}
+
+% --- Work in Progress ---
+\cvsection{Work in Progress}
+\begin{cvlist}
+\item ``The Dynamics of Trade Fragmentation: A Network Approach.''
+\item ``Tariffs as Taxes on Capital'' (with R. Domínguez-Díaz, M. Domínguez-Jiménez and J.E. Gallegos).
+\end{cvlist}
+
+% --- Policy Papers ---
+\cvsection{Policy Papers}
+\begin{cvlist}
+\item ``The Propagation of Shocks across the Production Network and Implications for Monetary Policy'' (with S. Gebauer, A. Nakov, G. Nuño, C. Osbat, A. Palazzolo, G. Paz-Pardo, A. Paulus and M.T. Valderrama), ECB Occasional Paper 392, 2026.
+\item ``Estimating the Growth Potential of the Spanish Economy: A Methodological Review'' (with R. Domínguez, M. García and R. Veiga), Banco de España Occasional Paper 2604, 2026.
+\item ``CATALIST: A New, Bigger, Better Model for Evaluating Climate Change Transition Risks at Banco de España'' (with P. Aguilar, S. Hurtado, C. Menéndez and R. Veiga), Banco de España Working Paper 2504, 2025.
+\item ``Exposure of Spanish Firms to Imports of Critical Inputs from China: A Survey-Based Analysis'' (with I. Balteanu and A. Fernández), Banco de España Economic Bulletin 2024/Q4, Article 02.
+\item ``Navigating a Fragmenting Global Trading System: Insights for Central Banks'' (with M.G. Attinasi, M. Mancini et al.), ECB Occasional Paper 365, 2024.
+\item ``The Impact of Renewable Energies on Wholesale Electricity Prices,'' Banco de España Economic Bulletin 2024/Q3, Article 09.
+\item ``The Asymmetric Response of Producer Prices to Rising Oil and Gas Prices'' (with J.E. Gallegos), Banco de España Economic Bulletin 2022/Q4, Box 3.
+\item ``Potential Growth in the Spanish Economy after the Pandemic'' (with P. Cuadrado, J.M. Montero, M. Izquierdo and E. Moral-Benito), Banco de España Occasional Paper 2208, 2022.
+\item ``Economic Consequences of a Hypothetical Suspension of Russia-EU Trade,'' Banco de España Economic Bulletin 2022/Q2.
+\item ``Local Price Index for Spanish Urban Areas'' (with V. Forte-Campos and E. Moral-Benito), Banco de España Economic Bulletin 2021/Q3.
+\end{cvlist}
+
+% --- Refereeing ---
+\cvsection{Refereeing}
+\textit{Econometrica}, \textit{Journal of International Economics}, \textit{Journal of Macroeconomics}, \textit{Energy Economics}, \textit{Economic Modelling}, \textit{SERIEs}, \textit{The Journal of International Trade \& Economic Development}, ECB Working Paper Series, OeNB Working Paper Series.
+
+\end{document}
